@@ -1,0 +1,75 @@
+.footerDirective{
+  height: 150px;
+  width: 100%;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.information{
+  height: 100%;
+  width: calc(100% - 250px);
+  display: flex;
+  flex-direction: row;
+  /*justify-content: space-around;*/
+}
+.footerTxt{
+  margin: 0px 22px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.titleTxt{
+  margin: 10px 0;
+  font-size: 25px;
+  color: #868d95;
+  color: black;
+  cursor: pointer;
+}
+.titleTxt:hover{
+  color: #46F350;
+  font-size: 27px;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  cursor: pointer;
+}
+.titleSub{
+  margin-bottom: 10px;
+}
+.titleSubTxt{
+  margin-top: 5px;
+  font-size: 15px;
+  color: black;
+  font-weight: bold;
+}
+.botLogo{
+  height: 100%;
+  width: 250px;
+  background: #252729;
+}
+.botLogoImg{
+  height: 100%;
+  width: 250px;
+}
+u{
+  color: #868d95;
+}
+a{
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #46F350;
+  text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+  cursor: pointer;
+}

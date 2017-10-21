@@ -1,10 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="rental">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <!-- rest window size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Page Title -->
+    <title>High Octane Rentals</title>
+    <!-- style sheets -->
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+    <link href="styles/machines.css" rel="stylesheet">
+    <link href="directives/header/header.css" rel="stylesheet">
+    <link href="directives/footer/footer.css" rel="stylesheet">
   </head>
-  <body>
-
+  <body ng-controller="mainCtrl">
+    <!-- link to the views -->
+    <ui-view></ui-view>
+    <!-- script links -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="app.js"></script>
+    <script src="controllers/mainCrtl.js"></script>
+    <script src="controllers/landingCtrl.js"></script>
+    <script src="controllers/dirtCtrl.js"></script>
+    <script src="controllers/snowCtrl.js"></script>
+    <script src="directives/footer/footer.js"></script>
+    <script src="directives/header/header.js"></script>
   </body>
 </html>

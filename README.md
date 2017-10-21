@@ -1,1 +1,2 @@
-# rental-site
+# RentalCompany
+project for a customer
