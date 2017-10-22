@@ -5,6 +5,8 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  position: relative;
 }
 .logo{
   height: 100px;
@@ -55,6 +57,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: all .5s;
 }
 .angle {
   position: absolute;
@@ -90,4 +93,71 @@
   justify-content: flex-end;
   align-items: center;
   padding-right: 35px;
+}
+
+/*mobile nav*/
+.mobile-nav{
+  position: absolute;
+  border: 1px solid black;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  text-align: right;
+  padding: 20px;
+  top: 25px;
+  visibility: hidden;
+  right: -250px;
+  height: 160px;
+  width: 194px;
+  background: #c7c7c7;
+  transition: all .5s;
+}
+.mobile-open{
+  display: none;
+  margin-right: 10px;
+  max-width: 20px;
+}
+.mobile-open:hover{
+  cursor: pointer;
+}
+.mobile-close{
+  max-width: 20px;
+  margin-right: 15px;
+}
+.mobile-close:hover{
+  cursor: pointer;
+}
+.mobileLi{
+  font-size: 18px;
+  margin: 15px 0;
+}
+.mobileLi:hover{
+  font-size: 20px;
+}
+@media(max-width:750px){
+  .headerNav{
+    width: calc(100% - 160px);
+  }
+  .navNav{
+    padding-right: 10px;
+  }
+  .middleNav{
+    justify-content: flex-end;
+  }
+  .mobile-open{
+    display: inline;
+  }
+  .hideli{
+    display: none;
+  }
+  .logo{
+    width: 130px;
+  }
+  .logoImgHolder{
+    display: none;
+  }
+}
+@media(max-width:325px){
+  .bottomNav{
+    padding-right: 8px;
+  }
 }
