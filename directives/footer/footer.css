@@ -1,75 +1,63 @@
 .footerDirective{
-  height: 150px;
+  padding: 30px 10px;
   width: 100%;
   background: white;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  font-family:Helvetica,Arial,sans-serif!important;
 }
 .information{
   height: 100%;
   width: calc(100% - 250px);
   display: flex;
-  flex-direction: row;
-  /*justify-content: space-around;*/
-}
-.footerTxt{
-  margin: 0px 22px;
-  font-weight: bold;
-  display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  min-width: 215px;
 }
-.titleTxt{
-  margin: 10px 0;
-  font-size: 25px;
-  color: #868d95;
-  color: black;
-  cursor: pointer;
+.pageLinks{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 350px;
 }
-.titleTxt:hover{
-  color: #46F350;
-  font-size: 27px;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  cursor: pointer;
-}
-.titleSub{
-  margin-bottom: 10px;
-}
-.titleSubTxt{
-  margin-top: 5px;
-  font-size: 15px;
-  color: black;
+.mainLinks{
   font-weight: bold;
 }
-.botLogo{
-  height: 100%;
-  width: 250px;
-  background: #252729;
+.mainLinks:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
-.botLogoImg{
-  height: 100%;
-  width: 250px;
+.pageLinks h1{
+  margin: 5px 20px;
+  font-size: 20px
+  text-decoration: none;
 }
-u{
-  color: #868d95;
+.pdfLinks{
+
+}
+.p-links{
+  font-size: 17px;
+  text-decoration: none;
+}
+.link-skidoo{
+  font-size: 12px;
 }
 a{
-  font-size: 15px;
-  font-weight: bold;
   text-decoration: none;
   color: black;
 }
 a:hover{
-  color: #46F350;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  cursor: pointer;
+  text-decoration: underline;
+}
+@media(max-width:485px){
+  .botLogo{
+    display: none;
+  }
+}
+.botLogo{
+  max-width: 250px;
+}
+.botLogoImg{
+  height: 100%;
+  width: 100%;
 }

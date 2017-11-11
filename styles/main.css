@@ -1,10 +1,16 @@
 body{
-  background: #FFF;
+  background: lightgrey;
   font-family: "TradeGothicLTStd","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .landingWrapper{
   max-width: 1440px;
   margin: auto;
+}
+@media(min-width:1441px){
+  .landingWrapper{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+  }
 }
 .landingPage{
   width: 100%;

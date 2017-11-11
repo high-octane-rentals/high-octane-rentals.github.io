@@ -1,4 +1,5 @@
 .headerDirective{
+  font-family:Helvetica,Arial,sans-serif!important;
   height: 100px;
   width: 100%;
   background: #252729;
@@ -14,6 +15,9 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+.logo:hover{
+  cursor: pointer;
 }
 .logoImgHolder{
   width: 90px;
@@ -49,6 +53,17 @@
   flex-direction: column;
 }
 .topNav{
+}
+.navFontStyle{
+  font-weight: 100;
+  letter-spacing: 1.5px;
+  font-size: 17px;
+}
+@media(max-width:366px){
+  .navFontStyle{
+    letter-spacing: 1.2px;
+    font-size: 13px;
+  }
 }
 .middleNav{
   position: relative;
@@ -112,15 +127,16 @@
   transition: all .5s;
 }
 .mobile-open{
+  visibility: hidden;
   display: none;
   margin-right: 10px;
-  max-width: 20px;
+  max-width: 30px;
 }
 .mobile-open:hover{
   cursor: pointer;
 }
 .mobile-close{
-  max-width: 20px;
+  max-width: 30px;
   margin-right: 15px;
 }
 .mobile-close:hover{
@@ -145,6 +161,7 @@
   }
   .mobile-open{
     display: inline;
+    visibility: visible;
   }
   .hideli{
     display: none;
