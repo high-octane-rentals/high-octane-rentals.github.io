@@ -1,16 +1,10 @@
 body{
-  background: lightgrey;
+  background: black;
   font-family: "TradeGothicLTStd","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .landingWrapper{
   max-width: 1440px;
   margin: auto;
-}
-@media(min-width:1441px){
-  .landingWrapper{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
-  }
 }
 .landingPage{
   width: 100%;
@@ -19,87 +13,188 @@ body{
 }
 .heroImg{
   height: 600px;
-  background-image: url(/img/landJumbo.jpeg);
+  background-image: url(/img/11-11-17/yellow-fall-2017.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .Jumbotron{
-  position: relative;
-  height: calc(100% - 258px);
-  height: 571px;
-  /*background-size: cover;
-  background-position: center;*/
-  /*background-image: url("../img/landJumbo.jpeg");*/
 }
 .jumboTxt{
-  width: 100%;
   font-size: 60px;
   font-weight: bold;
-  color: white;
+  color: black;
+}
+.slide1{
+  background: red;
+  background-image: url(/img/11-11-17/snow1.jpeg);
+}
+.slide2{
+  background: green;
+  background-image: url(/img/11-11-17/expedition.jpeg);
+}
+.slide3{
+  background: blue;
+  background-image: url(/img/11-11-17/dirt3.jpg);
+}
+.slide4{
+  background: yellow;
+  background-image: url(/img/11-11-17/snow3.jpeg);
+}
+.mySlides{
+  padding: 0 8%;
+  height: 571px;
   text-align: center;
-  position: absolute;
-  top: 40px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
 }
-.jumboImg{
-  width: 100%;
-  height: 655px;
-  -webkit-transition: opacity 3s ease-in-out;
-    -moz-transition: opacity 3s ease-in-out;
-    -ms-transition: opacity 3s ease-in-out;
-    -o-transition: opacity 3s ease-in-out;
-  margin-bottom: -2px;
-}
-.contentHolder{
+.thumbnail{
   background: #252729;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+.demo{
+  height: 100px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all .1s;
+}
+.demo:hover{
+  cursor: pointer;
+  opacity: 1;
+  margin: 0 20px;
+  height: 120px;
+}
+/*.demobg1{
+  background-image: url(/img/11-11-17/snow1.jpeg);
+}
+.demobg2{
+  background-image: url(/img/11-11-17/expedition.jpeg);
+}
+.demobg3{
+  background-image: url(/img/11-11-17/dirt3.jpg);
+}
+.demobg4{
+  background-image: url(/img/11-11-17/snow3.jpeg);
+}*/
+.opacity-on{
+  opacity: .60;
+  margin: 10px 20px;
+  height: 100px;
+}
+.opacity-off{
+  opacity: 1;
+  margin: 0 20px;
+  height: 120px;
+}
+@media(max-width:1050px){
+  .demo{
+    height: 70px;
+  }
+  .demo:hover{
+    height: 90px;
+  }
+  .opacity-on{
+    height: 70px;
+  }
+  .opacity-off{
+    height: 90px;
+  }
+}
+@media(max-width:815px){
+  .demo:hover{
+    margin: 0 0;
+  }
+  .opacity-on{
+    margin: 10px 0;
+  }
+  .opacity-off{
+    margin: 0 0;
+  }
+}
+@media(max-width:662px){
+  .thumbnail{
+    display: none;
+  }
+}
+
+
+
+.contentHolder{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 .botBoxes{
-  height: 258px;
+  height: 550px;
   width: 50%;
-  min-width: 410px;
   background-size: cover;
   background-position: center;
-  filter: brightness(.5);
+  /*filter: brightness(.5);
   -webkit-filter: brightness(.5);
   -moz-filter: brightness(.5);
   -o-filter: brightness(.5);
-  -ms-filter: brightness(.5);
+  -ms-filter: brightness(.5);*/
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.botBoxes:hover{
+@media(max-width:870px){
+  .contentHolder{
+    display: flex;
+    flex-direction: column;
+  }
+  .botBoxes{
+    padding: 0 8%;
+    height: 450px;
+    width:100%;
+  }
+}
+/*.botBoxes:hover{
   filter: brightness(1);
   -webkit-filter: brightness(1);
   -moz-filter: brightness(1);
   -o-filter: brightness(1);
   -ms-filter: brightness(1);
-}
-.botTxtHolder{
-  width: 50%;
-  color: white;
-  font-size: 35px;
-  font-weight: bold;
-  padding: 10px;
-  text-shadow:
-    -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;
-  /*width: 350px;*/
-}
+}*/
 .dirt{
-  text-align: right;
-  background-image: url("../img/dirt.jpeg");
+  background-image: url("/img/11-11-17/dirtbox.jpg");
 }
 .snow{
-  background-image: url("../img/snow.jpeg");
+  background-image: url("/img/11-11-17/snowbox.jpg");
 }
-.rentMe{
-  cursor: pointer;
+.boxesTxt{
   text-align: center;
-  color: #46F350;
+  letter-spacing: 1.5px;
+  max-width: 300px;
+  color: #FFF;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: .9;
 }
-.footerposition{
+.botBoxes-btn{
+  transition: all .5s;
+  padding: 10px 15px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  min-width: 140px;
+  margin: 20px;
+  border: 1px solid #fff;
+  font-size: 20px;
+  font-weight: bold;
+  color: #46F350;
+  color: #fff;
+}
+.botBoxes-btn:hover{
+  cursor: pointer;
+  border: 1px solid #46F350;
+  color: #46F350;
 }

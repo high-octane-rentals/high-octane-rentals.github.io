@@ -20,7 +20,9 @@ angular.module('rental', ['ui.router'])
         controller: 'dirtCtrl',
         templateUrl: 'views/dirt.html'
       })
-
-
-
+      .state('info', {
+        url: '/info',
+        controller: 'infoCtrl',
+        templateUrl: 'views/info.html'
+      })
 })

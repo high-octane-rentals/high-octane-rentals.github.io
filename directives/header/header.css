@@ -114,15 +114,12 @@
 .mobile-nav{
   position: absolute;
   border: 1px solid black;
-  border-top-left-radius: 80px;
-  border-bottom-left-radius: 80px;
   text-align: right;
   padding: 20px;
-  top: 25px;
+  top: -250px;
   visibility: hidden;
-  right: -250px;
-  height: 160px;
-  width: 194px;
+  right: 0;
+  width: 210px;
   background: #c7c7c7;
   transition: all .5s;
 }
@@ -149,7 +146,7 @@
 .mobileLi:hover{
   font-size: 20px;
 }
-@media(max-width:750px){
+@media(max-width:870px){
   .headerNav{
     width: calc(100% - 160px);
   }
