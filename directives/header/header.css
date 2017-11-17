@@ -2,7 +2,7 @@
   font-family:Helvetica,Arial,sans-serif!important;
   height: 100px;
   width: 100%;
-  background: #252729;
+  background: black;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -79,7 +79,7 @@
   left: 0;
   width: 0;
   height: 0;
-  border-left: 30px solid #252729;
+  border-left: 30px solid black;
   border-bottom: 50px solid transparent;
   align-self: flex-start;
 }
@@ -103,7 +103,7 @@
 }
 .navNav{
   height: 25px;
-  background: #252729;
+  background: black;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -173,5 +173,10 @@
 @media(max-width:325px){
   .bottomNav{
     padding-right: 8px;
+  }
+}
+@media(max-width:985px){
+  .hide-home{
+    display: none;
   }
 }

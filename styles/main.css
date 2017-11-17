@@ -54,7 +54,7 @@ body{
 
 }
 .thumbnail{
-  background: #252729;
+  background: black;
   display: flex;
   flex-direction: row;
   justify-content: center;
