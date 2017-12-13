@@ -87,7 +87,7 @@
 }*/
 .machineTitles{
   text-align: center;
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
   letter-spacing: 1.5px;
   padding: 10px;
@@ -104,6 +104,8 @@
 }
 .dailyPrice{
   font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 .leftSide:hover .greenTitles{
   color: #000;

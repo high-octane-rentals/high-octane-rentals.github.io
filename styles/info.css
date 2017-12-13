@@ -97,6 +97,14 @@
   max-width: 500px;
   text-align: center;
 }
+@media(max-width:425px){
+  .info-resources{
+    flex-direction: column;
+  }
+  .mobile-mw{
+    margin-top: 15px;
+  }
+}
 .p-green{
   font-weight: bold;
   /*color: #46F350;
