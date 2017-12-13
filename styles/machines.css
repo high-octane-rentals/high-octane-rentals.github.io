@@ -44,6 +44,7 @@
   box-shadow: 0px 0px 5px black;
   border-radius: 5px;
   max-width: 370px;
+  min-height: 522px;
 }
 /*@media(max-width:870px){
   .machineContainer{
@@ -85,6 +86,7 @@
   }
 }*/
 .machineTitles{
+  text-align: center;
   font-size: 30px;
   font-weight: bold;
   letter-spacing: 1.5px;

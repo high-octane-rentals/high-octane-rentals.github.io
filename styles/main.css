@@ -24,6 +24,15 @@ body{
   font-size: 60px;
   font-weight: bold;
   color: black;
+  margin-top: 60px;
+}
+.jumboTxtWhite{
+  color: #fff;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.jumboTxtGreen{
+  color: #46F350;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .slide1{
   background: red;
@@ -50,7 +59,7 @@ body{
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
 
 }
 .thumbnail{
@@ -178,7 +187,7 @@ body{
   color: #FFF;
   font-size: 36px;
   font-weight: bold;
-  line-height: .9;
+  line-height: 1;
 }
 .botBoxes-btn{
   transition: all .5s;
