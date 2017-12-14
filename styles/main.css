@@ -24,7 +24,13 @@ body{
   font-size: 60px;
   font-weight: bold;
   color: black;
-  margin-top: 20px;
+  margin-top: 60px;
+}
+@media(max-width:450px){
+  .jumboTxt{
+    font-size: 45px;
+    margin-top: 20px;
+  }
 }
 .jumboTxtWhite{
   color: #fff;
@@ -35,20 +41,20 @@ body{
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 .slide1{
-  background: red;
+  /*background: red;*/
   background-image: url(/img/11-11-17/snow1.jpeg);
 }
 .slide2{
-  background: green;
-  background-image: url(/img/11-11-17/expedition.jpeg);
+  /*background: green;*/
+  background-image: url(/img/11-11-17/snow4.jpeg);
 }
 .slide3{
-  background: blue;
+  /*background: blue;*/
   background-image: url(/img/11-11-17/dirt3.jpg);
 }
 .slide4{
-  background: yellow;
-  background-image: url(/img/11-11-17/snow3.jpeg);
+  /*background: yellow;*/
+  background-image: url(/img/11-11-17/snow5.jpeg);
 }
 .mySlides{
   padding: 0 8%;
@@ -59,8 +65,20 @@ body{
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
-  /*align-items: center;*/
-
+}
+@media(max-width:450px){
+  .mySlides{
+    height: 468px;
+  }
+  .mySlides.slide1{
+    background-position: -385px;
+  }
+  .mySlides.slide2{
+    background-position: -530px;
+  }
+  .mySlides.slide4{
+    background-position: -550px;
+  }
 }
 .thumbnail{
   background: black;
@@ -81,18 +99,6 @@ body{
   margin: 0 20px;
   height: 120px;
 }
-/*.demobg1{
-  background-image: url(/img/11-11-17/snow1.jpeg);
-}
-.demobg2{
-  background-image: url(/img/11-11-17/expedition.jpeg);
-}
-.demobg3{
-  background-image: url(/img/11-11-17/dirt3.jpg);
-}
-.demobg4{
-  background-image: url(/img/11-11-17/snow3.jpeg);
-}*/
 .opacity-on{
   opacity: .60;
   margin: 10px 20px;

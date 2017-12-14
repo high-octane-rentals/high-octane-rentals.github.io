@@ -46,12 +46,6 @@
   max-width: 370px;
   min-height: 522px;
 }
-/*@media(max-width:870px){
-  .machineContainer{
-    flex-direction: column;
-    align-items: center;
-  }
-}*/
 .leftSide{
   padding: 20px;
   display: flex;
@@ -80,11 +74,6 @@
 .machineImg{
   width: 300px;
 }
-/*@media(max-width:870px){
-  .machineImg{
-    width: 300px;
-  }
-}*/
 .machineTitles{
   text-align: center;
   font-size: 25px;
