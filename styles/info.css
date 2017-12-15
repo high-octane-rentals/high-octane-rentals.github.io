@@ -18,6 +18,11 @@
   color: #46F350;
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
+@media(max-width:350px){
+  .infoTitle{
+    font-size: 55px;
+  }
+}
 .infoContainer{
   background: white;
   width: calc(100% - 8%);

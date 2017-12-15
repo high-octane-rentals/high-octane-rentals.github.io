@@ -27,6 +27,20 @@
     font-size: 40px;
   }
 }
+.pageSubTitle{
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  margin: -10px 20px 20px;
+  line-height: 1.1;
+  color: #46F350;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.pageSubTitle a{
+  text-decoration: none;
+  color: #46F350;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
 .content-holder{
   width: 100%;
   display: flex;
@@ -123,6 +137,7 @@
 }
 .festuresList li{
   list-style-position: outside;
+  text-transform: capitalize;
   padding: 2px 0;
   margin-left: 1em;
 }

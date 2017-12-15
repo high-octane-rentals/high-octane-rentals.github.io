@@ -1,5 +1,9 @@
 angular.module('rental').controller('landingCtrl', function($scope){
 
+  $(document).ready(function(){
+    $(this).scrollTop(0);
+  });
+
   // var myIndex = 0;
   // carousel();
   //

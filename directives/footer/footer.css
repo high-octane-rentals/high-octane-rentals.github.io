@@ -13,7 +13,7 @@
   width: calc(100% - 250px);
   display: flex;
   flex-direction: column;
-  min-width: 215px;
+  min-width: 300px;
 }
 .pageLinks{
   display: flex;
@@ -33,6 +33,11 @@
   font-size: 20px
   text-decoration: none;
 }
+@media(max-width:625px){
+  .pageLinks h1{
+    margin: 5px 10px;
+  }
+}
 .pdfLinks{
 
 }
@@ -50,7 +55,7 @@ a{
 a:hover{
   text-decoration: underline;
 }
-@media(max-width:485px){
+@media(max-width:625px){
   .botLogo{
     display: none;
   }
