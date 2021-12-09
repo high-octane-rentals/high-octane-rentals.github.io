@@ -25,4 +25,9 @@ angular.module('rental', ['ui.router'])
         controller: 'infoCtrl',
         templateUrl: 'views/info.html'
       })
+      .state('inst', {
+        url: '/inst',
+        controller: 'instCtrl',
+        templateUrl: 'views/inst.html'
+      })
 })

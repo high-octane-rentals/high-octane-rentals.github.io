@@ -40,6 +40,9 @@
 .green{
   color: #46F350;
 }
+.white{
+  color: #FFF;
+}
 .logoImg{
   height: 45px;
   width: 45px;
@@ -58,6 +61,9 @@
   font-weight: 100;
   letter-spacing: 1.5px;
   font-size: 17px;
+}
+.bold{
+  font-weight: bold;
 }
 @media(max-width:366px){
   .navFontStyle{
@@ -88,6 +94,11 @@
   color: #52585e;
   margin: 0 30px;
   font-weight: bold;
+}
+@media(max-width:1200px){
+  .headerLi{
+    margin: 0 15px;
+  }
 }
 .headerLi:hover{
   color: #46F350;
