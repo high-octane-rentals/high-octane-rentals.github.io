@@ -41,7 +41,7 @@
   color: #46F350;
 }
 .white{
-  color: #FFF;
+  color: #FFFFFF;
 }
 .logoImg{
   height: 45px;
@@ -100,7 +100,6 @@
     margin: 0 15px;
   }
 }
-
 .headerLi:hover{
   color: #46F350;
   font-size: 22px;
