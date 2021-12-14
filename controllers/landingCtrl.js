@@ -30,7 +30,7 @@ angular.module('rental').controller('landingCtrl', function($scope){
   $scope.reset = function() {
   	console.log("reset me");
       clearTimeout(window.myTimer);
-      window.myTimer = setTimeout(carousel, 5000);
+      window.myTimer = setTimeout(carousel, 7000);
   };
 
   function currentDiv(n) {
@@ -68,7 +68,7 @@ angular.module('rental').controller('landingCtrl', function($scope){
       console.log("current = "+ slideIndex);
       currentDiv(slideIndex);
       console.log("inside carousel");
-      window.myTimer = setTimeout(carousel, 5000);
+      window.myTimer = setTimeout(carousel, 7000);
   }
 
 

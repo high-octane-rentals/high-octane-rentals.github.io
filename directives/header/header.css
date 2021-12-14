@@ -110,7 +110,8 @@
     1px 1px 0 #000;
   cursor: pointer;
 }
-.bottomNav{
+.bottomNav a{
+  text-decoration: underline;
 }
 .navNav{
   height: 25px;

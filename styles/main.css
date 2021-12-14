@@ -140,6 +140,18 @@ body{
   }
 }
 
+.bookNow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px;
+  text-align: center;
+}
+.bookNow a{
+  color: #FFF;
+  font-size: 50px;
+  text-decoration: underline;
+}
 
 
 .contentHolder{
